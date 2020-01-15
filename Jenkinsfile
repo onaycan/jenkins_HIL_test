@@ -3,12 +3,7 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-          docker.image.inside() {
-			    PWD = sh (
-			    	script: 'touch bok.txt',
-			    	returnStdout: true
-			    ).trim()
-			    }
+          sh "touch bok.txt"
       }
     }
   }

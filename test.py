@@ -2,5 +2,5 @@ import os
 import datetime
 
 calltime=datetime.datetime.now()
-outfile=open("output.out",'a')
+outfile=open("outputnow.out",'a')
 outfile.write(str(calltime)+"\n")
